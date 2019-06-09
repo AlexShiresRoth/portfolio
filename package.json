@@ -1,0 +1,41 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --mode=production",
+    "start": "nodemon server.js",
+    "compile:sass": "node-sass --include-path sass sass/main.scss   client/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AlexShiresRoth/portfolio.git"
+  },
+  "author": "AlexShiresRoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexShiresRoth/portfolio/issues"
+  },
+  "homepage": "https://github.com/AlexShiresRoth/portfolio#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  }
+}
