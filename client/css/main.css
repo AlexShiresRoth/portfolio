@@ -1,39 +1,56 @@
 @media screen and (max-width: 400px) {
   .section__header {
+    background: url("../../images/header.jpg") center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; }
-    .section__header--nav {
-      background: #ff4500;
-      height: 4rem;
-      width: 100vw;
-      position: fixed;
+    position: relative;
+    filter: grayscale(40%);
+    z-index: 0; }
+    .section__header--logo {
+      position: absolute;
       top: 0;
       left: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding: 1rem;
-      box-shadow: 0 2px 2px #cc3700; }
-      .section__header--nav--logo {
-        border-radius: 50%;
-        width: 5rem;
-        height: 5rem;
-        box-shadow: 0 10px 10px #cc3700;
-        background: #fff; }
-        .section__header--nav--logo img {
-          height: 100%;
-          width: 100%; }
+      z-index: 1;
+      margin: 1rem;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      box-shadow: 0 2px 4px black; }
+      .section__header--logo img {
+        height: 100%;
+        width: 100%; }
+    .section__header--overlay {
+      position: absolute;
+      height: 95vh;
+      width: 100vh;
+      z-index: -1;
+      background: rgba(0, 0, 0, 0.8);
+      top: 0;
+      left: 0; }
     .section__header--title-and-desc {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 2rem; }
+      color: #fff;
+      padding: 2rem;
+      align-items: center; }
+      .section__header--title-and-desc h1 {
+        font-size: 2rem;
+        margin: .5rem 0; }
+      .section__header--title-and-desc hr {
+        width: 4rem;
+        height: 2px;
+        background: #ff4500;
+        border: 0; }
       .section__header--title-and-desc p {
-        color: #666; } }
+        color: #666;
+        font-size: .9rem;
+        margin: .5rem 0; } }
 
 * {
   padding: 0;
