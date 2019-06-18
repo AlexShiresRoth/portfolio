@@ -1,8 +1,55 @@
-@media screen and (max-width: 400px){
-    .section__projects{
-        padding:2rem;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
+@media screen and (max-width: 400px) {
+  .section__projects {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background: #f12711; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      & a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0 ;
+      justify-content: space-around;
+
+      &--image-container {
+        width: 100vw;
+        height: 10rem;
+        margin: 1rem 0;
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
