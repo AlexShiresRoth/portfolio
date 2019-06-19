@@ -16,7 +16,7 @@ export default class Projects extends Component {
     {
       title: "Italiano Bros Website",
       tech: "ReactJS, Express, Javascript, NodeJS",
-      desc: "Simple dynamic and responsive website for a construction company.",
+      desc: "Simple, dynamic and responsive website for a construction company.",
       img: ["italiano-bros.png"]
     },
     {

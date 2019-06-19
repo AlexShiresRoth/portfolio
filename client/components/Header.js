@@ -20,7 +20,7 @@ export default class Header extends Component{
                     <div className="section__header--title-and-desc">
                         <h1>Alex Shires Roth</h1>
                         <hr></hr>
-                        <p>Full Stack Developer/Game Developer</p>
+                        <p>Full Stack Developer/Indie Game Developer</p>
                     </div>
             </section>
         )

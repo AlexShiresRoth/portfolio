@@ -84,11 +84,36 @@
       .section__projects--item--image-container {
         width: 100vw;
         height: 10rem;
-        margin: 1rem 0; }
-        .section__projects--item--image-container img {
+        margin: 2rem 0;
+        box-shadow: 0 5px 10px #b3b3b3; }
+        .section__projects--item--image-container--image {
           height: 100%;
           width: 100%;
-          object-fit: cover; } }
+          object-fit: cover; }
+          .section__projects--item--image-container--image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; }
+      .section__projects--item--info {
+        margin: 0 2rem; }
+        .section__projects--item--info h2 {
+          text-transform: uppercase;
+          margin: 0.5rem 0; }
+        .section__projects--item--info hr {
+          margin: 0.5rem 0;
+          height: 2px;
+          border: 0;
+          width: 50%;
+          background: linear-gradient(to right, #f5af19, #f12711);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: -webkit-linear-gradient(to right, #f5af19, #f12711); } }
+
+.paragraph__mobile {
+  color: #6f6f6f;
+  margin: 1rem 0; }
+  .paragraph__mobile span {
+    color: #ff581a;
+    text-transform: uppercase; }
 
 * {
   padding: 0;

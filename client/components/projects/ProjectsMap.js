@@ -13,17 +13,17 @@ export const ProjectsMap = props => {
             </figure>
           })}
         </div>
-        <div className="section__projects--item--title">
-          <h2>{project.title}</h2>
-        </div>
-        <div className="section__projects--item--tech">
-          <p>{project.tech}</p>
-        </div>
-        <div className="section__projects--item--desc">
-          <p>{project.desc}</p>
-        </div>
-        <div className="section__projects--item--img">
-          <p>{project.img}</p>
+        <div className="section__projects--item--info">
+          <div className="section__projects--item--title">
+            <h2>{project.title}</h2>
+            <hr></hr>
+          </div>
+          <div className="section__projects--item--desc">
+            <p className="paragraph__mobile">{project.desc}</p>
+          </div>
+          <div className="section__projects--item--tech">
+            <p className="paragraph__mobile"><span>Tech</span>: {project.tech}</p>
+          </div>
         </div>
       </div>
     );
