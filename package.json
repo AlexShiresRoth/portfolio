@@ -2,7 +2,6 @@
   "name": "portfoliosite",
   "version": "1.0.0",
   "description": "My personal portfolio",
-  "main": "server.js",
   "scripts": {
     "webpack": "webpack --mode=production",
     "start": "node server.js",
