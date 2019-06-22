@@ -4,7 +4,7 @@
   "description": "My personal portfolio",
   "scripts": {
     "webpack": "webpack --mode=production",
-    "start": "node server.js",
+    "start": "node ./bin/www.js",
     "compile:sass": "node-sass --include-path sass sass/main.scss   client/css/main.css"
   },
   "repository": {

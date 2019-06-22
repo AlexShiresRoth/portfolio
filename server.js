@@ -13,12 +13,5 @@ app.use(express.urlencoded({extended:true}));
 
 app.use('/',indexRouter);
 
-
-let PORT = (`5000`||process.env.PORT);
-
-app.set(PORT);
-
-app.listen(PORT,() => console.log(`Server started on port ${PORT}`))
-
 module.exports = app;
 
