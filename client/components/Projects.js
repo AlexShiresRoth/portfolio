@@ -8,7 +8,7 @@ export default class Projects extends Component {
     super(props);
 
     this.state = {
-      projects: [],
+      projects: []
     };
   }
 
@@ -16,7 +16,8 @@ export default class Projects extends Component {
     {
       title: "Italiano Bros Website",
       tech: "ReactJS, Express, Javascript, NodeJS",
-      desc: "Simple, dynamic and responsive website for a construction company.",
+      desc:
+        "Simple, dynamic and responsive website for a construction company.",
       img: ["italiano-bros.png"]
     },
     {
@@ -57,18 +58,18 @@ export default class Projects extends Component {
   ];
 
   toggleGames() {
-    if(this.state.projects === this.apps){
-        return this.setState({projects: this.games})
+    if (this.state.projects === this.apps) {
+      return this.setState({ projects: this.games });
     }
   }
-  toggleApps(){
-      if(this.state.projects === this.games){
-          return this.setState({projects: this.apps})
-      }
+  toggleApps() {
+    if (this.state.projects === this.games) {
+      return this.setState({ projects: this.apps });
+    }
   }
 
-  componentDidMount(){
-      this.setState({ projects: this.apps })
+  componentDidMount() {
+    this.setState({ projects: this.apps });
   }
   render() {
     return (
