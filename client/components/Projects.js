@@ -47,13 +47,13 @@ export default class Projects extends Component {
       tech: "Unreal Engine 4, C++",
       desc:
         "Escape from rooms by finding hidden triggers, before time runs out.",
-      img: ["img1.jpg"]
+      img: []
     },
     {
       title: "Battlgrounds",
       tech: "Unreal Engine 4, C++",
       desc: "Fight against enemy vehicles on an alien terrain.",
-      img: ["img1.jpg"]
+      img: []
     }
   ];
 

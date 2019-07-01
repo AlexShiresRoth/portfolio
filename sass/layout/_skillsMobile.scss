@@ -1,0 +1,25 @@
+@media screen and (max-width: 400px) {
+  .section__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 100vw;
+    min-height: 20vh;
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      min-height:20vh;
+      &--skill-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+}
