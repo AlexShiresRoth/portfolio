@@ -7,18 +7,48 @@
     padding: 2rem;
     width: 100vw;
     min-height: 20vh;
+    &--heading {
+      background: #f12711; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #f5af19,
+        #f12711
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      & h2 {
+        font-size:2rem;
+      }
+    }
     &--container {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
-      min-height:20vh;
+      min-height: 20vh;
       &--skill-row {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        margin: 1.5rem 0;
+        &--icon-block {
+          margin: 0 1rem;
+          & i {
+            color:  #f12711;
+            font-size: 2.5rem;
+          }
+          & h3 {
+            color:  #f12711;
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

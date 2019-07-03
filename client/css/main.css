@@ -106,7 +106,7 @@
       -webkit-text-fill-color: transparent; }
       .section__projects--buttons a {
         text-decoration: none;
-        font-size: 1.2rem; }
+        font-size: 1.5rem; }
         .section__projects--buttons a:hover {
           cursor: pointer; }
     .section__projects--item {
@@ -116,15 +116,15 @@
       justify-content: space-around; }
       .section__projects--item--image-container {
         width: 100vw;
-        height: 20vh;
+        height: 30vh;
         margin: 2rem 0;
         box-shadow: 0 5px 10px #b3b3b3; }
         .section__projects--item--image-container--image {
-          height: 20vh;
+          height: 100%;
           width: 100%;
           object-fit: cover; }
           .section__projects--item--image-container--image img {
-            height: 20vh;
+            height: 100%;
             width: 100%;
             object-fit: cover; }
       .section__projects--item--info {
@@ -150,6 +150,17 @@
     padding: 2rem;
     width: 100vw;
     min-height: 20vh; }
+    .section__skills--heading {
+      background: #f12711;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f5af19, #f12711);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .section__skills--heading h2 {
+        font-size: 2rem; }
     .section__skills--container {
       display: flex;
       flex-direction: column;
@@ -161,7 +172,16 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        width: 100%; } }
+        width: 100%;
+        margin: 1.5rem 0; }
+        .section__skills--container--skill-row--icon-block {
+          margin: 0 1rem; }
+          .section__skills--container--skill-row--icon-block i {
+            color: #f12711;
+            font-size: 2.5rem; }
+          .section__skills--container--skill-row--icon-block h3 {
+            color: #f12711;
+            font-size: 1rem; } }
 
 .paragraph__mobile {
   color: #6f6f6f;
@@ -169,6 +189,9 @@
   .paragraph__mobile span {
     color: #ff581a;
     text-transform: uppercase; }
+
+p {
+  color: #6f6f6f; }
 
 * {
   padding: 0;
