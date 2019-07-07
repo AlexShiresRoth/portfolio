@@ -1,17 +1,23 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
-import Header from "./components/Header";
-import Projects from "./components/Projects";
-import Skills from './components/Skills';
+import { Loader } from './loader/Loader';
+
+const Header = lazy(() => import("./components/Header"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Contact = lazy(() => import("./components/Contact"));
 
 import "./css/main.css";
 
 export const App = () => {
   return (
-    <div>
-      <Header />
-      <Projects />
-      <Skills />
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div>
+        <Header />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
+    </Suspense>
   );
 };

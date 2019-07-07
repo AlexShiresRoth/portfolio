@@ -20,10 +20,6 @@ export default class Header extends Component {
         {
           icon: <i className="fab fa-twitter" />,
           url: `https://twitter.com/AlexShiresRoth`
-        },
-        {
-          icon: <i className="fab fa-instagram" />,
-          url: `https://www.instagram.com/alexshiresrothproductions/?hl=en`
         }
       ]
     };
@@ -39,7 +35,7 @@ export default class Header extends Component {
         <div className="section__header--title-and-desc">
           <h1>Alex Shires Roth</h1>
           <hr />
-          <p>Full Stack Developer/Indie Game Developer</p>
+          <p>Self Taught Software Developer</p>
           <Icons icons={this.state.urls} />
         </div>
       </section>
