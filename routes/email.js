@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 const express = require("express"),
   cors = require("cors"),
   mailgun = require("mailgun-js"),
