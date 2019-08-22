@@ -82,5 +82,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log("portfolio server hath started");
+  console.log("portfolio server hath started" + port);
 }
