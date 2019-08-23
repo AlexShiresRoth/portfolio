@@ -1,21 +1,22 @@
-
 /////////////components///////////
 @import "./base/mixins";
 @import "./base/variables";
 /////////////layout////////////////
-@import './layout/headerMobile';
-@import './layout/projectsMobile';
+@import "./layout/headerMobile";
+@import "./layout/projectsMobile";
 @import "./layout/skillsMobile";
+@import "./layout/ContactMobile";
 //////////////utils/////////////////
-@import './utilities/text';
+@import "./utilities/text";
+@import "./loader";
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-size:80%;
-    font-family:'Work Sans';
-    overflow-x:hidden;
+body {
+  font-size: 80%;
+  font-family: "Work Sans";
+  overflow-x: hidden;
 }

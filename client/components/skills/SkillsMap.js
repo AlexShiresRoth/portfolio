@@ -7,9 +7,8 @@ export const SkillsMap = props => {
     return (
       <div className="section__skills--container--skill-row">
         <div className="section__skills--container--skill-row--icon-block">
-          <i className={`${props.icon}`} />
+          {skill.icon ? <i className={`${skill.icon}`} /> : <h3>{skill.title}</h3>}
         </div>
-        <h3>{skill.title}</h3>
         <p>{skill.experience}</p>
       </div>
     );

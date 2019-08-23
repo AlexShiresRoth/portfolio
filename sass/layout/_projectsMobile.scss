@@ -26,7 +26,7 @@
 
       & a {
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         &:hover {
           cursor: pointer;
         }
@@ -41,16 +41,16 @@
 
       &--image-container {
         width: 100vw;
-        height: 20vh;
+        height: 30vh;
         margin: 2rem 0;
         box-shadow: 0 5px 10px darken(#fff, 30%);
 
         &--image {
-          height: 20vh;
+          height: 100%;
           width: 100%;
           object-fit: cover;
           & img {
-            height: 20vh;
+            height: 100%;
             width: 100%;
             object-fit: cover;
           }

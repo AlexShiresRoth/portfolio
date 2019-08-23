@@ -46,9 +46,9 @@ export default class Skills extends React.Component {
           projects: "6"
         },
         {
-          title: "Express.js",
+          title: "ExpressJS",
           experience: "1 year",
-          icon: "fab fa-node",
+          icon: null,
           projects: "6"
         },
         {
@@ -78,11 +78,10 @@ export default class Skills extends React.Component {
       <section className="section__skills">
         <div className="section__skills--heading">
           <h2>Tech Skills</h2>
-          <hr />
         </div>
-          <div className="section__skills--container">
-            <SkillsMap skills={this.state.skills} />
-          </div>
+        <div className="section__skills--container">
+          <SkillsMap skills={this.state.skills} />
+        </div>
       </section>
     );
   }
