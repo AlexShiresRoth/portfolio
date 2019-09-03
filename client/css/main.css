@@ -25,7 +25,7 @@
       height: 95vh;
       width: 100vh;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.93);
+      background: rgba(0, 0, 0, 0.83);
       top: 0;
       left: 0; }
     .section__header--title-and-desc {
@@ -95,6 +95,7 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      margin: 1rem;
       background: #f12711;
       /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #f5af19, #f12711);
@@ -111,34 +112,67 @@
     .section__projects--item {
       display: flex;
       flex-direction: column;
-      margin: 2rem 0;
+      margin: 0;
       justify-content: space-around; }
+      .section__projects--item--image-overlay {
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0; }
       .section__projects--item--image-container {
         width: 100vw;
         height: 30vh;
-        margin: 2rem 0;
-        box-shadow: 0 5px 10px #b3b3b3; }
+        margin: 0rem 0;
+        box-shadow: 0 5px 10px #b3b3b3;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
         .section__projects--item--image-container--image {
           height: 100%;
           width: 100%;
-          object-fit: cover; }
+          object-fit: cover;
+          transition: all .3s ease; }
+          .section__projects--item--image-container--image:hover {
+            transform: scale(1.1); }
           .section__projects--item--image-container--image img {
             height: 100%;
             width: 100%;
             object-fit: cover; }
       .section__projects--item--info {
-        margin: 0 2rem; }
+        margin: 0rem;
+        position: absolute;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
         .section__projects--item--info h2 {
           text-transform: uppercase;
-          margin: 0.5rem 0; }
-        .section__projects--item--info hr {
           margin: 0.5rem 0;
-          height: 2px;
-          border: 0;
-          width: 50%;
-          background: linear-gradient(to right, #f5af19, #f12711);
-          /* Chrome 10-25, Safari 5.1-6 */
-          background: -webkit-linear-gradient(to right, #f5af19, #f12711); } }
+          color: #fff;
+          font-weight: 300; }
+      .section__projects--item--links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        .section__projects--item--links button {
+          width: 5rem;
+          height: 2rem;
+          border: 1px solid #fff;
+          margin: .5rem;
+          background: #fff;
+          border-radius: 5px;
+          color: #666;
+          transition: all .3s ease-in-out; }
+          .section__projects--item--links button:hover {
+            color: #fff;
+            background: #f12711;
+            cursor: pointer;
+            border: 1px solid #f12711; } }
 
 @media screen and (max-width: 400px) {
   .section__skills {

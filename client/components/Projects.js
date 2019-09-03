@@ -18,26 +18,34 @@ export default class Projects extends Component {
       tech: "ReactJS, Express, Javascript, NodeJS",
       desc:
         "Simple, dynamic and responsive website for a construction company.",
-      img: ["italiano-bros.png"]
+      img: ["italiano-bros.png"],
+      url: 'http://www.italianobrosenterprise.com/',
+      codeurl:'https://github.com/AlexShiresRoth/italiano-bros'
     },
     {
       title: "Send Noods",
       tech: "ReactJS, Express, Javascript, NodeJS",
       desc: `Dynamic and responsive web app for finding ramen restaurants around user location. 
         Integrated with Google Places/Maps API.`,
-      img: ["send-noods.png"]
+      img: ["send-noods.png"],
+      url: 'https://shrouded-reef-43110.herokuapp.com/',
+      codeurl:'https://github.com/AlexShiresRoth/send-noods'
     },
     {
       title: "Timer App",
       tech: "PassportJS, Express, Javascript, NodeJS",
       desc: `Simple timer app made with vanilla js and passportjs for user authentication.`,
-      img: ["timerapp.png"]
+      img: ["timerapp.png"],
+      url: 'http://personaltimerapp.herokuapp.com/login',
+      codeurl:'https://github.com/AlexShiresRoth/timerapp'
     },
     {
       title: "Rothenberg Law Offices",
       tech: "Express, Javascript, NodeJS",
       desc: `Responsive and dynamic website for a law office.`,
-      img: ["lawoffice.png"]
+      img: ["lawoffice.png"],
+      url: 'http://www.urmyattorney.com/',
+      codeurl:'https://github.com/AlexShiresRoth/lawoffice'
     }
   ];
 
@@ -47,13 +55,17 @@ export default class Projects extends Component {
       tech: "Unreal Engine 4, C++",
       desc:
         "Escape from rooms by finding hidden triggers, before time runs out.",
-      img: []
+      img: [],
+      url: 'http://www.urmyattorney.com/',
+      codeurl:'https://github.com/AlexShiresRoth/lawoffice'
     },
     {
       title: "Battlgrounds",
       tech: "Unreal Engine 4, C++",
       desc: "Fight against enemy vehicles on an alien terrain.",
-      img: []
+      img: [],
+      url: 'http://www.urmyattorney.com/',
+      codeurl:'https://github.com/AlexShiresRoth/lawoffice'
     }
   ];
 
