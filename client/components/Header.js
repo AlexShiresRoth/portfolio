@@ -39,11 +39,6 @@ export default class Header extends Component {
           <p>Self Taught Software Developer</p>
           <Icons icons={this.state.urls} />
         </div>
-        <div className="section__header--buttons">
-          <Link to="/resume">
-            <button>Resume</button>
-          </Link>
-        </div>
       </section>
     );
   }

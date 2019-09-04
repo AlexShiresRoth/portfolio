@@ -36,9 +36,7 @@ export default class Contact extends React.Component {
     };
     return await axios({
       method: "post",
-      url: `http://localhost:5000/api/send-email?email=${
-        messageInfo.email
-      }&name=${messageInfo.name}&message=${messageInfo.message}`,
+      url: `http://localhost:5000/api/send-email?email=${messageInfo.email}&name=${messageInfo.name}&message=${messageInfo.message}`,
       data: {
         headers: { "Content-Type": "application/x-www-form-urlencoded" }
       }
@@ -61,6 +59,9 @@ export default class Contact extends React.Component {
             className="section__contact--container--form"
           >
             <div className="section__contact--container--form--input-row">
+              <div className="section__contact--container--form--input-row--icon-box">
+                <i class="far fa-user"></i>
+              </div>
               <input
                 name="name"
                 type="text"
@@ -71,6 +72,9 @@ export default class Contact extends React.Component {
               />
             </div>
             <div className="section__contact--container--form--input-row">
+              <div className="section__contact--container--form--input-row--icon-box">
+                <i class="far fa-envelope"></i>
+              </div>
               <input
                 name="email"
                 type="email"
