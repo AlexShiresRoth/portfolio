@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import '../css/main.css';
 
 const Header = lazy(() => import('./Header'));
-const  Projects  = lazy(() => import('./Projects'));
+const Projects  = lazy(() => import('./Projects'));
 const Skills = lazy(() => import('./Skills'));
 const Contact = lazy(() => import('./Contact'));
 

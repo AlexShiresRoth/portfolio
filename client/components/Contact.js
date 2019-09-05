@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import axios from "axios";
 import "../css/main.css";
 
@@ -105,6 +105,6 @@ export default class Contact extends React.Component {
   };
 
   render() {
-    return <div>{this.renderForm()}</div>;
+    return <Fragment>{this.renderForm()}</Fragment>;
   }
 }

@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Fragment, useState, useEffect} from "react";
 
 import "../css/main.css";
 import { SkillsMap } from "./skills/SkillsMap";
 
-export default class Skills extends React.Component {
-  constructor(props) {
-    super(props);
+const Skills = () => {
 
-    this.state = {
-      skills: [
+
+   const skillsArr = [
         {
           title: "JavaScript",
           icon: "fab fa-js-square",
@@ -65,19 +63,23 @@ export default class Skills extends React.Component {
           projects: 2
         }
       ]
-    };
-  }
 
-  render() {
+      const [skills,setSkills] = useState(skillsArr);
+
+      useEffect(() => {
+        setSkills(skillsArr);
+      });
+
     return (
       <section className="section__skills">
         <div className="section__skills--heading">
           <h2>Tech Skills</h2>
         </div>
         <div className="section__skills--container">
-          <SkillsMap skills={this.state.skills} />
+          <SkillsMap skills={skills} />
         </div>
       </section>
     );
   }
-}
+
+  export default Skills;
