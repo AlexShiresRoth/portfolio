@@ -50,6 +50,11 @@ export default class Skills extends React.Component {
           projects: null
         },
         {
+          title: "MongoDB",
+          icon: null,
+          projects: null
+        },
+        {
           title: "Unreal Engine 4",
           icon: null,
           projects: 2

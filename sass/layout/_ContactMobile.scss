@@ -4,13 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: darken(#f12711, 15%);
-    background: -webkit-linear-gradient(
-      to right,
-      $orange-color,
-      $dark-orange
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, $orange-color, $dark-orange);
+    background: $orange-color;
     &--container {
       height: 100%;
       width: 100%;
@@ -26,7 +20,7 @@
       &--form {
         margin: 2rem 0;
         background: #fff;
-        box-shadow: 0 2px 5px #931609;
+        box-shadow: 0 2px 5px darken(#fff,20%);
         min-height: 20rem;
         min-width: 80vw;
         border-radius: 2px;
@@ -41,7 +35,7 @@
           flex-direction: row;
           justify-content: center;
           &--icon-box {
-            background: $dark-orange;
+            background: $orange-color;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             display: flex;
@@ -57,40 +51,41 @@
             }
           }
           & input {
-            border: 1px solid $dark-orange;
+            border: 1px solid darken(#eee,5%);
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             transition: all 0.2s ease;
             min-height: 2.5rem;
+            background: #eee;
             width: 100%;
             padding: 0.5rem;
             &:focus {
               outline: none;
-              border: 1px solid lighten($dark-orange, 10%);
+              border: 1px solid darken(dodgerblue, 10%);
             }
             &:hover {
-              border: 1px solid lighten($dark-orange, 20%);
+              border: 1px solid darken(dodgerblue, 20%);
             }
           }
           & textarea {
-            border: 1px solid $dark-orange;
+            border: 1px solid #eee;
             transition: all 0.2s ease;
             border-radius: 5px;
             padding: 0.5rem;
             width: 100%;
             &:focus {
               outline: none;
-              border: 1px solid lighten($dark-orange, 10%);
+              border: 1px solid darken(dodgerblue, 10%);
             }
             &:hover {
-              border: 1px solid lighten($dark-orange, 20%);
+              border: 1px solid darken(dodgerblue, 20%);
             }
           }
           & button {
             padding: 1rem 2rem;
             color: #fff;
-            background: $dark-orange;
-            border: 1px solid $dark-orange;
+            background: $orange-color;
+            border: 1px solid $orange-color;
             transition: all 0.2s ease;
             border-radius: 3px;
             width: 100%;
