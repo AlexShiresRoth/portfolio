@@ -40,7 +40,7 @@
     height: 95vh;
     width: 100vh;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.83);
+    background: rgba(0, 0, 0, 0.75);
     top: 0;
     left: 0;
   }
@@ -105,12 +105,12 @@
             box-shadow: 0px 5px 30% #992900;
   }
   .section__header--title-and-desc--icons a i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background: #f12711;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#ff6a33), to(#f12711));
-    background: linear-gradient(to right, #ff6a33, #f12711);
+    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#f12711));
+    background: linear-gradient(to right, #FF4500, #f12711);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -163,8 +163,8 @@
     background: #f12711;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#ff6a33), to(#f12711));
-    background: linear-gradient(to right, #ff6a33, #f12711);
+    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#f12711));
+    background: linear-gradient(to right, #FF4500, #f12711);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -286,9 +286,9 @@
   }
   .section__projects--item--links button:hover {
     color: #fff;
-    background: #ff6a33;
+    background: #FF4500;
     cursor: pointer;
-    border: 1px solid #ff6a33;
+    border: 1px solid #FF4500;
     -webkit-box-shadow: 0 3px 3px black;
             box-shadow: 0 3px 3px black;
   }
@@ -328,8 +328,8 @@
     background: #f12711;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#ff6a33), to(#f12711));
-    background: linear-gradient(to right, #ff6a33, #f12711);
+    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#f12711));
+    background: linear-gradient(to right, #FF4500, #f12711);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -347,7 +347,7 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    min-height: 20rem;
+    min-height: 30rem;
   }
   .section__skills--container--skill-row--icon-block {
     display: -webkit-box;
@@ -363,11 +363,11 @@
     margin: 0 .5rem;
   }
   .section__skills--container--skill-row--icon-block i {
-    color: #ff6a33;
+    color: #FF4500;
     font-size: 2.5rem;
   }
   .section__skills--container--skill-row--icon-block h3 {
-    color: #ff6a33;
+    color: #FF4500;
     font-size: 1rem;
   }
 }
@@ -387,7 +387,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #ff6a33;
+    background: #000;
   }
   .section__contact--container {
     height: 100%;
@@ -412,8 +412,8 @@
   .section__contact--container--form {
     margin: 2rem 0;
     background: #fff;
-    -webkit-box-shadow: 0 2px 5px #cccccc;
-            box-shadow: 0 2px 5px #cccccc;
+    -webkit-box-shadow: 0 2px 2px #4d4d4d;
+            box-shadow: 0 2px 2px #4d4d4d;
     min-height: 20rem;
     min-width: 80vw;
     border-radius: 2px;
@@ -444,7 +444,7 @@
             justify-content: center;
   }
   .section__contact--container--form--input-row--icon-box {
-    background: #ff6a33;
+    background: #333;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     display: -webkit-box;
@@ -464,7 +464,7 @@
     min-width: 2.5rem;
   }
   .section__contact--container--form--input-row--icon-box i {
-    color: #fff;
+    color: #ffa280;
     font-size: 1.1rem;
     padding: 0.5rem;
   }
@@ -488,6 +488,7 @@
   }
   .section__contact--container--form--input-row textarea {
     border: 1px solid #eee;
+    background: #eee;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border-radius: 5px;
@@ -504,16 +505,18 @@
   .section__contact--container--form--input-row button {
     padding: 1rem 2rem;
     color: #fff;
-    background: #ff6a33;
-    border: 1px solid #ff6a33;
+    background: transparent;
+    border: 1px solid #ff7d4d;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border-radius: 3px;
     width: 100%;
+    text-transform: uppercase;
+    color: #ff7d4d;
   }
   .section__contact--container--form--input-row button:hover {
-    background: #f23d29;
-    border: 1px solid #f23d29;
+    background: #ff581a;
+    border: 1px solid #ff581a;
     cursor: pointer;
   }
   .section__contact--container--form--input-row button:active {
@@ -528,7 +531,7 @@
 }
 
 .paragraph__mobile span {
-  color: #ff7d4d;
+  color: #ff581a;
   text-transform: uppercase;
 }
 

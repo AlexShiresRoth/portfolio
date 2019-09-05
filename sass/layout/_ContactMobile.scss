@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $orange-color;
+    background: #000;
     &--container {
       height: 100%;
       width: 100%;
@@ -20,7 +20,7 @@
       &--form {
         margin: 2rem 0;
         background: #fff;
-        box-shadow: 0 2px 5px darken(#fff,20%);
+        box-shadow: 0 2px 2px darken(#666,10%);
         min-height: 20rem;
         min-width: 80vw;
         border-radius: 2px;
@@ -35,7 +35,7 @@
           flex-direction: row;
           justify-content: center;
           &--icon-box {
-            background: $orange-color;
+            background: #333;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             display: flex;
@@ -45,7 +45,7 @@
             min-height: 2.5rem;
             min-width: 2.5rem;
             & i {
-              color: #fff;
+              color:lighten($orange-color,25%);
               font-size: 1.1rem;
               padding: 0.5rem;
             }
@@ -69,6 +69,7 @@
           }
           & textarea {
             border: 1px solid #eee;
+            background:#eee;
             transition: all 0.2s ease;
             border-radius: 5px;
             padding: 0.5rem;
@@ -84,14 +85,16 @@
           & button {
             padding: 1rem 2rem;
             color: #fff;
-            background: $orange-color;
-            border: 1px solid $orange-color;
+            background: transparent;
+            border: 1px solid lighten($orange-color,15%);
             transition: all 0.2s ease;
             border-radius: 3px;
             width: 100%;
+            text-transform: uppercase;
+            color: lighten($orange-color,15%);
             &:hover {
-              background: lighten($dark-orange, 5%);
-              border: 1px solid lighten($dark-orange, 5%);
+              background: lighten($orange-color, 5%);
+              border: 1px solid lighten($orange-color, 5%);
               cursor: pointer;
             }
             &:active {

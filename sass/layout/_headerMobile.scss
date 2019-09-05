@@ -27,7 +27,7 @@
       height: 95vh;
       width: 100vh;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.83);
+      background: rgba(0, 0, 0, 0.75);
       top: 0;
       left: 0;
     }
@@ -70,7 +70,7 @@
             box-shadow: 0px 5px 30% darken(#ff4500, 20%);
           }
           & i {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             @include orange-gradient;
             transition: all 0.3s ease;
 
