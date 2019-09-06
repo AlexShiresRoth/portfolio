@@ -1,38 +1,31 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import axios from "axios";
 import "../css/main.css";
 
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
+const Contact = () => {
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
-    this.state = {
-      fullName: "",
-      email: "",
-      message: ""
-    };
-  }
+  const { name, email, message } = inputs;
 
-  handleNameInput = event => {
-    let fullName = event.target.value;
-    fullName !== "" ? this.setState({ fullName: fullName }) : "";
-  };
-  handleEmailInput = event => {
-    let email = event.target.value;
-    email !== "" ? this.setState({ email: email }) : "";
-  };
-  handleMessageInput = event => {
-    let message = event.target.value;
-    message !== "" ? this.setState({ message: message }) : "";
+  const handleInput = event => {
+    if (event) {
+      event.preventDefault();
+
+      setInputs({...inputs, [event.target.name]: [event.target.value] });
+    }
   };
 
-  formSubmit = async e => {
+  const formSubmit = async e => {
     e.preventDefault();
 
     const messageInfo = {
-      name: this.state.fullName,
-      email: this.state.email,
-      message: this.state.message
+      name: name,
+      email: email,
+      message: message
     };
     return await axios({
       method: "post",
@@ -49,13 +42,14 @@ export default class Contact extends React.Component {
       });
   };
 
-  renderForm = () => {
+  const renderForm = () => {
     return (
       <div className="section__contact">
         <div className="section__contact--container">
           <h2>Want to work together?</h2>
+          <hr></hr>
           <form
-            onSubmit={this.formSubmit}
+            onSubmit={formSubmit}
             className="section__contact--container--form"
           >
             <div className="section__contact--container--form--input-row">
@@ -66,8 +60,8 @@ export default class Contact extends React.Component {
                 name="name"
                 type="text"
                 placeholder="First & Last Name"
-                value={this.state.fullName}
-                onChange={this.handleNameInput}
+                value={name}
+                onChange={e => handleInput(e)}
                 required
               />
             </div>
@@ -79,8 +73,8 @@ export default class Contact extends React.Component {
                 name="email"
                 type="email"
                 placeholder="Email"
-                value={this.state.email}
-                onChange={this.handleEmailInput}
+                value={email}
+                onChange={e => handleInput(e)}
                 required
               />
             </div>
@@ -90,13 +84,13 @@ export default class Contact extends React.Component {
                 type="text"
                 placeholder="Enter your message"
                 rows="10"
-                value={this.state.message}
-                onChange={this.handleMessageInput}
+                value={message}
+                onChange={e => handleInput(e)}
                 required
               />
             </div>
             <div className="section__contact--container--form--input-row">
-              <button onClick={this.formSubmit}>Send</button>
+              <button onClick={formSubmit}>Send</button>
             </div>
           </form>
         </div>
@@ -104,7 +98,7 @@ export default class Contact extends React.Component {
     );
   };
 
-  render() {
-    return <Fragment>{this.renderForm()}</Fragment>;
-  }
-}
+  return <Fragment>{renderForm()}</Fragment>;
+};
+
+export default Contact;

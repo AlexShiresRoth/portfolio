@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    filter: grayscale(56%);
+    filter: grayscale(6%);
     z-index: 0; }
     .section__header--logo {
       z-index: 1;
@@ -25,7 +25,7 @@
       height: 95vh;
       width: 100vh;
       z-index: -1;
-      background: rgba(0, 0, 56, 0.5);
+      background: rgba(0, 0, 2, 0.8);
       top: 0;
       left: 0; }
     .section__header--title-and-desc {
@@ -66,9 +66,9 @@
             font-size: 1.4rem;
             background: #f12711;
             /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #FF4500, #f12711);
+            background: -webkit-linear-gradient(to right, #FF4500, #992900);
             /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #FF4500, #f12711);
+            background: linear-gradient(to right, #FF4500, #992900);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -100,9 +100,9 @@
       /* fallback for old browsers */
       background: #f12711;
       /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #FF4500, #f12711);
+      background: -webkit-linear-gradient(to right, #FF4500, #992900);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #FF4500, #f12711);
+      background: linear-gradient(to right, #FF4500, #992900);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -199,9 +199,9 @@
       /* fallback for old browsers */
       background: #f12711;
       /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #FF4500, #f12711);
+      background: -webkit-linear-gradient(to right, #FF4500, #992900);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #FF4500, #f12711);
+      background: linear-gradient(to right, #FF4500, #992900);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -242,10 +242,16 @@
       display: flex;
       flex-direction: column;
       align-items: center; }
+      .section__contact--container hr {
+        background: #FF4500;
+        border: 0;
+        height: 2.5px;
+        width: 15vw; }
       .section__contact--container h2 {
         color: #fff;
         font-family: "Raleway";
-        font-weight: 300; }
+        font-weight: 300;
+        margin: 1rem 0; }
       .section__contact--container--form {
         margin: 2rem 0;
         background: #fff;
@@ -313,17 +319,20 @@
             width: 100%;
             text-transform: uppercase;
             color: #001c38;
+            font-weight: 700;
             letter-spacing: 2px;
             transition: all .3s ease-in-out; }
             .section__contact--container--form--input-row button:hover {
               background: #002951;
               border: 3px solid #002951;
               cursor: pointer;
-              color: #fff; }
+              color: #fff;
+              font-weight: 500; }
             .section__contact--container--form--input-row button:active {
               background: #00509e;
               border: 3px solid #00509e;
-              color: #fff; } }
+              color: #fff;
+              font-weight: 500; } }
 
 .paragraph__mobile {
   color: #6f6f6f;
