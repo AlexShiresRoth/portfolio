@@ -29,7 +29,7 @@ const Contact = () => {
 		};
 		  return await axios({
 				method: 'post',
-				url: `http://www.alexshiresroth.com/api/send-email?email=${messageInfo.email}&name=${messageInfo.name}&message=${messageInfo.message}`,
+				url: `/api/send-email?email=${messageInfo.email}&name=${messageInfo.name}&message=${messageInfo.message}`,
 				data: {
 					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 				},
