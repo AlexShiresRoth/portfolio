@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 import '../css/main.css';
 
@@ -26,7 +26,8 @@ const Contact = () => {
 			name: name,
 			email: email,
 			message: message,
-		};
+    };
+    console.log(messageInfo)
 		  return await axios({
 				method: 'post',
 				url: `/api/send-email?email=${messageInfo.email}&name=${messageInfo.name}&message=${messageInfo.message}`,
@@ -35,6 +36,10 @@ const Contact = () => {
 				},
 			}).then(response => {
         console.log(response)
+        alert('Sent')
+      }).catch(error => {
+        alert(error.message);
+        console.log(error);
       });
 	};
 
