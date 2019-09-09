@@ -11,16 +11,12 @@
       justify-content: space-around;
       align-items: center;
       margin: 2rem 1rem;
-      background: #f12711; /* fallback for old browsers */
-      @include orange-gradient;
-       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
 
       & a {
         text-decoration: none;
         font-size: 1.5rem;
         font-weight:500;
+        color: $orange-color;
         &:hover {
           cursor: pointer;
         }

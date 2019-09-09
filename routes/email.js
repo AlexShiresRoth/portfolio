@@ -1,7 +1,10 @@
-//require("dotenv").config();
+require("dotenv").config();
 const express = require('express'),
 	mailgun = require('mailgun-js'),
+	cors = require('cors'),
 	router = express.Router();
+
+	router.use(cors());
 
 router.post('/', (req, res) => {
 	const { name, email, message } = req.query;
@@ -10,12 +13,12 @@ router.post('/', (req, res) => {
 	const mg = mailgun({ apiKey: process.env.API_KEY, domain: DOMAIN });
 	const data = {
 		from: email,
-		to: 'alexshiresroth@alexshiresroth.com',
+		to: 'alex@alexshiresroth.com',
 		subject: 'Client Contact Request',
-		text: `<div class='email-container'>
-            <h2>${name}</h2>
-             <p>${message}</p>
-             </div>`,
+		text: `<tr class='email-container'>
+            <td>${name}</td>
+             <td>${message}</td>
+             </tr>`,
 	};
 	mg.messages().send(data, (error, body) => {
 		if (error) {

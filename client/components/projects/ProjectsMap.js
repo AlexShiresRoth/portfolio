@@ -11,7 +11,7 @@ export const ProjectsMap = props => {
             return (
               <figure className="section__projects--item--image-container--image">
                 <img
-                  src={require(`../../../images/projects/${img}`)}
+                  src={(`${img}`)}
                   key={`${i}`}
                   alt={`${project.title}`}
                 />

@@ -32,7 +32,7 @@ export default class Header extends Component {
         <div className="section__header--overlay" />
         <div className="section__header--title-and-desc">
           <div className="section__header--logo">
-            <img src={require("../../images/logothree.png")} alt="asr logo" />
+            <img src={("https://res.cloudinary.com/snackmanproductions/image/upload/v1567980650/portfolio/logo_od9hrb.png")} alt="asr logo" />
           </div>
           <h1>Alex Shires Roth</h1>
           <hr />

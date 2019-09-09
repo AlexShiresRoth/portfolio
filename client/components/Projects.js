@@ -11,8 +11,17 @@ const Projects = props => {
       tech: "ReactJS, Express, Javascript, NodeJS",
       desc:
         "Simple, dynamic and responsive website for a construction company.",
-      img: ["italiano-bros.png"],
+      img: ["https://res.cloudinary.com/snackmanproductions/image/upload/v1567980236/portfolio/2019-09-08_5_ciahbf.png"],
       url: "http://www.italianobrosenterprise.com/",
+      codeurl: "https://github.com/AlexShiresRoth/italiano-bros"
+    },
+    {
+      title: "Progress Journal",
+      tech: "MongoDB Atlas, Express, Javascript, NodeJS, PassportJS",
+      desc:
+        "Fully CRUD operational web app. ",
+      img: ["https://res.cloudinary.com/snackmanproductions/image/upload/v1567978820/portfolio/2019-09-08_iyhfcc.png"],
+      url: "https://sheltered-ravine-46969.herokuapp.com/",
       codeurl: "https://github.com/AlexShiresRoth/italiano-bros"
     },
     {
@@ -20,7 +29,7 @@ const Projects = props => {
       tech: "ReactJS, Express, Javascript, NodeJS",
       desc: `Dynamic and responsive web app for finding ramen restaurants around user location. 
         Integrated with Google Places/Maps API.`,
-      img: ["send-noods.png"],
+      img: ["https://res.cloudinary.com/snackmanproductions/image/upload/v1567980261/portfolio/2019-09-08_7_vtodo7.png"],
       url: "https://shrouded-reef-43110.herokuapp.com/",
       codeurl: "https://github.com/AlexShiresRoth/send-noods"
     },
@@ -28,7 +37,7 @@ const Projects = props => {
       title: "Timer App",
       tech: "PassportJS, Express, Javascript, NodeJS",
       desc: `Simple timer app made with vanilla js and passportjs for user authentication.`,
-      img: ["timerapp.png"],
+      img: ["https://res.cloudinary.com/snackmanproductions/image/upload/v1567980273/portfolio/2019-09-08_8_hziqvh.png"],
       url: "http://personaltimerapp.herokuapp.com/login",
       codeurl: "https://github.com/AlexShiresRoth/timerapp"
     },
@@ -36,7 +45,7 @@ const Projects = props => {
       title: "Rothenberg Law Offices",
       tech: "Express, Javascript, NodeJS",
       desc: `Responsive and dynamic website for a law office.`,
-      img: ["lawoffice.png"],
+      img: ["https://res.cloudinary.com/snackmanproductions/image/upload/v1567980368/portfolio/2019-09-08_11_zbquop.png"],
       url: "http://www.urmyattorney.com/",
       codeurl: "https://github.com/AlexShiresRoth/lawoffice"
     }
