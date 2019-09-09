@@ -1,10 +1,8 @@
 //require("dotenv").config();
 const express = require('express'),
 	mailgun = require('mailgun-js'),
-	cors = require('cors'),
 	router = express.Router();
 
-	router.use(cors());
 
 router.post('/', (req, res) => {
 	const { name, email, message } = req.query;
