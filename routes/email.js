@@ -4,9 +4,9 @@ const express = require('express'),
 	cors = require('cors'),
 	router = express.Router();
 
-	router.use(cors());
+router.use(cors());
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
 	const { name, email, message } = req.query;
 	console.log(name, email, message);
 	const DOMAIN = process.env.DOMAIN;
@@ -20,13 +20,17 @@ router.post('/', (req, res) => {
              <td>${message}</td>
              </tr>`,
 	};
-	mg.messages().send(data, (error, body) => {
-		if (error) {
-			console.log(error.message);
-		} else if (!error) {
-			console.log(body);
-		}
-	});
+	try {
+		await mg.messages().send(data, (error, body) => {
+			if (error) {
+				console.log(error.message);
+			} else if (!error) {
+				console.log(body);
+			}
+		});
+	} catch (error) {
+
+	}
 });
 
 module.exports = router;
