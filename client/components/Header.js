@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../css/main.css';
 
 import { Icons } from './reusable/Icons';
-import  HeaderTag  from './header/HeaderTag';
+import HeaderTag from './header/HeaderTag';
 
-const Header = _ => {
+const Header = ({ handleScroll, id }) => {
+
 	const urls = [
 		{
 			icon: <i className="fab fa-github" />,
@@ -29,6 +30,7 @@ const Header = _ => {
 	return (
 		<section className="section__header">
 			<div className="section__header--overlay" />
+			<div className="section__header--nav"></div>
 			<div className="section__header--title-and-desc">
 				<div className="section__header--logo">
 					<img
@@ -40,8 +42,11 @@ const Header = _ => {
 				</div>
 				<h1>Alex Shires Roth</h1>
 				<hr />
-        <HeaderTag />
+				<HeaderTag />
 				<Icons icons={icons} />
+			</div>
+			<div className="section__header--arrow-down" onClick={() => handleScroll(id)}>
+				<i class="fa fa-angle-double-down"></i>
 			</div>
 		</section>
 	);

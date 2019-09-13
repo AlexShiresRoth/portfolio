@@ -1,86 +1,107 @@
 @media screen and (max-width: 400px) {
-  .section__header {
-    background: url("https://res.cloudinary.com/snackmanproductions/image/upload/v1567980625/portfolio/header_odxaqg.jpg") center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    filter: grayscale(6%);
-    z-index: 0;
-    &--logo {
-      z-index: 1;
-      margin: 2rem;
-      max-width: 8rem;
-      max-height: 8rem;
-      align-self: center;
-      & img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-    &--overlay {
-      position: absolute;
-      height: 95vh;
-      width: 100vh;
-      z-index: -1;
-      background: rgba(0, 0, 2, 0.8);
-      top: 0;
-      left: 0;
-    }
-    &--title-and-desc {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      padding: 2rem;
-      & h1 {
-        font-size: 2rem;
-        margin: 0.5rem 0;
-        text-transform: uppercase;
-        font-weight:300;
-      }
-      & hr {
-        width: 4rem;
-        height: 2px;
-        background: #ff4500;
-        border: 0;
-      }
-      & p {
-        color: #666;
-        font-size: 1rem;
-        margin: 0.5rem 0;
-        text-transform: uppercase
-      }
-      &--icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 1rem 0;
-        & a {
-          text-decoration: none;
-          margin: 0 0.2rem;
-          transition: all 0.2s ease;
-          &:hover {
-            box-shadow: 0px 5px 30% darken(#ff4500, 20%);
-          }
-          & i {
-            font-size: 1.4rem;
-            @include orange-gradient;
-            transition: all 0.3s ease;
+	.section__header {
+		background: url('https://res.cloudinary.com/snackmanproductions/image/upload/v1567980625/portfolio/header_odxaqg.jpg')
+			center center fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 95vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		filter: grayscale(6%);
+		z-index: 0;
+		&--logo {
+			z-index: 1;
+			margin: 2rem;
+			max-width: 8rem;
+			max-height: 8rem;
+			align-self: center;
+			& img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&--overlay {
+			position: absolute;
+			height: 95vh;
+			width: 100vh;
+			z-index: -1;
+			background: rgba(0, 0, 2, 0.8);
+			top: 0;
+			left: 0;
+		}
+		&--nav {
+			display: flex;
+		}
+		&--arrow-down {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			& i {
+				color: #fff;
+				font-size: 2.4rem;
+				opacity: 0.55;
+				animation: bounce 3s ease-in-out 0s infinite;
+				transition: all 0.2s ease;
+				&:hover {
+					cursor: pointer;
+					opacity: 1;
+				}
+			}
+		}
+		&--title-and-desc {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			padding: 2rem;
+			& h1 {
+				font-size: 2rem;
+				margin: 0.5rem 0;
+				text-transform: uppercase;
+				font-weight: 300;
+			}
+			& hr {
+				width: 4rem;
+				height: 2px;
+				background: #ff4500;
+				border: 0;
+			}
+			& p {
+				color: #666;
+				font-size: 1rem;
+				margin: 0.5rem 0;
+				text-transform: uppercase;
+			}
+			&--icons {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				margin: 1rem 0;
+				& a {
+					text-decoration: none;
+					margin: 0 0.2rem;
+					transition: all 0.2s ease;
+					&:hover {
+						box-shadow: 0px 5px 30% darken(#ff4500, 20%);
+					}
+					& i {
+						font-size: 1.4rem;
+						@include orange-gradient;
+						transition: all 0.3s ease;
 
-            &:hover {
-              @include dark-orange-gradient;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-    }
-  }
+						&:hover {
+							@include dark-orange-gradient;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
 }
