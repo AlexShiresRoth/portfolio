@@ -45,7 +45,7 @@ const Header = ({ handleScroll, id }) => {
 				<HeaderTag />
 				<Icons icons={icons} />
 			</div>
-			<div className="section__header--arrow-down" onClick={() => handleScroll(id)}>
+			<div className="section__header--arrow-down" onClick={() => handleScroll(0)}>
 				<i class="fa fa-angle-double-down"></i>
 			</div>
 		</section>

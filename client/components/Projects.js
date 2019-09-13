@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ProjectsMap } from "./projects/ProjectsMap";
 
 import "../css/main.css";
@@ -77,8 +77,10 @@ const Projects = props => {
     toggleProjects(apps);
   }, []);
 
+  const thisRef = useRef(props.id);
+
   return (
-    <section className="section__projects">
+    <section ref={thisRef} className="section__projects">
       <div className="section__projects--buttons">
         <a onClick={() => toggleProjects(apps)}>WebApps</a>
         <a onClick={() => toggleProjects(games)}>Games</a>

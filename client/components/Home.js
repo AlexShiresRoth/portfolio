@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, createRef, useRef, useEffect } from 'react';
+import React, { Suspense, lazy } from 'react';
 import '../css/main.css';
 
 const Header = lazy(() => import('./Header'));
@@ -14,27 +14,21 @@ const Home = () => {
 		{ title: 'Contact', id: 4 },
 	];
 
-	const refs = useRef(
-		components.reduce((acc, item) => {
-			acc[item.id] = createRef();
-			return acc;
-		})
-	);
-
+	//come up with a non shitty version
 	const handleScroll = id => {
-		refs[id].current.scrollIntoView({
+		console.log(id);
+		window.scrollTo({
 			behavior: 'smooth',
-			block: 'start',
+			top: window.innerHeight,
 		});
 	};
 
-
 	return (
 		<>
-			<Header key={refs} handleScroll={handleScroll} id={components[0].id} />
-			<Projects key={refs} />
-			<Skills key={refs} />
-			<Contact key={refs} />
+			<Header handleScroll={handleScroll} id={components[0].id} />
+			<Projects id={1} />
+			<Skills />
+			<Contact />
 		</>
 	);
 };
