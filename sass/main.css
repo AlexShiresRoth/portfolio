@@ -191,6 +191,8 @@
     font-weight: 500;
     color: #FF4500;
     border-bottom: 2px solid transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .section__projects--buttons a:hover {
     cursor: pointer;
@@ -598,6 +600,54 @@ p {
   color: #6f6f6f;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    opacity: .55;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  25% {
+    opacity: .55;
+  }
+  50% {
+    opacity: .70;
+    -webkit-transform: translateY(-0.5vh);
+            transform: translateY(-0.5vh);
+  }
+  75% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .55;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: .55;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  25% {
+    opacity: .55;
+  }
+  50% {
+    opacity: .70;
+    -webkit-transform: translateY(-0.5vh);
+            transform: translateY(-0.5vh);
+  }
+  75% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .55;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
 .load--fallback {
   height: 100vh;
   width: 100vw;
@@ -631,7 +681,7 @@ p {
 
 body {
   font-size: 80%;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */
