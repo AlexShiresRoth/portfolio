@@ -1,6 +1,6 @@
 @media screen and (max-width: 400px) {
   .section__header {
-    background: url("../../images/header.jpg") center center fixed;
+    background: url("https://res.cloudinary.com/snackmanproductions/image/upload/v1567980625/portfolio/header_odxaqg.jpg") center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 95vh;
@@ -11,9 +11,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -128,6 +128,32 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
+  .section__header--down--arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__header--down--arrow i {
+    color: #fff;
+    font-size: 2.6rem;
+    opacity: .8;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .section__header--down--arrow i:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -158,27 +184,17 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 2rem 1rem;
-    background: #f12711;
-    /* fallback for old browsers */
-    background: #f12711;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#992900));
-    background: linear-gradient(to right, #FF4500, #992900);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .section__projects--buttons a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
+    color: #FF4500;
+    border-bottom: 2px solid transparent;
   }
   .section__projects--buttons a:hover {
     cursor: pointer;
+    border-bottom: 2px solid #FF4500;
   }
   .section__projects--item {
     display: -webkit-box;
@@ -323,21 +339,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #f12711;
-    /* fallback for old browsers */
-    background: #f12711;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#992900));
-    background: linear-gradient(to right, #FF4500, #992900);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .section__skills--heading h2 {
+    color: #FF4500;
     font-size: 2rem;
   }
   .section__skills--container {
@@ -360,11 +364,23 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
   .section__skills--container--skill-row--icon-block i {
-    color: #FF4500;
     font-size: 2.5rem;
+    background: #f12711;
+    /* fallback for old browsers */
+    background: #f12711;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#FF4500), to(#992900));
+    background: linear-gradient(to right, #FF4500, #992900);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .section__skills--container--skill-row--icon-block h3 {
     color: #FF4500;
@@ -537,6 +553,34 @@
     border: 3px solid #00509e;
     color: #fff;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section__about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: ()[2];
+        grid-template-rows: repeat(2);
+    gap: 2rem;
+    justify-items: start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 3rem 1.5rem;
+    min-height: 30vh;
+  }
+  .section__about h2 {
+    font-size: 2rem;
+    color: #FF4500;
+    font-weight: 700;
+  }
+  .section__about p {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2;
   }
 }
 
