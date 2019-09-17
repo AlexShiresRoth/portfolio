@@ -78,6 +78,7 @@
     font-size: 1rem;
     margin: 0.5rem 0;
     text-transform: uppercase;
+    font-weight: 700;
   }
   .section__header--title-and-desc--icons {
     display: -webkit-box;
@@ -188,7 +189,7 @@
   .section__projects--buttons a {
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #FF4500;
     border-bottom: 2px solid transparent;
     -webkit-transition: all .3s ease-in-out;
