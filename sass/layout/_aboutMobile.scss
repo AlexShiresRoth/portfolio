@@ -1,0 +1,23 @@
+@media screen and (max-width: 400px) {
+  .section__about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 2rem;
+    justify-items: start;
+    align-content: center;
+    padding: 3rem 1.5rem;
+    min-height: 30vh;
+    & h2 {
+      font-size: 2rem;
+      color: $orange-color;
+      font-weight: 700;
+    }
+    & p {
+      color: #666;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 2;
+    }
+  }
+}

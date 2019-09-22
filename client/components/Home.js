@@ -24,12 +24,13 @@ const Home = () => {
 	};
 
 	return (
-		<>
-			<Header handleScroll={handleScroll} id={components[0].id} />
-			<Projects id={1} />
+		<div>
+			<Header />
+			<About />
+			<Projects />
 			<Skills />
 			<Contact />
-		</>
+		</div>
 	);
 };
 
