@@ -5,6 +5,7 @@ const Header = lazy(() => import('./Header'));
 const Projects = lazy(() => import('./Projects'));
 const Skills = lazy(() => import('./Skills'));
 const Contact = lazy(() => import('./Contact'));
+const About = lazy(() => import('./About'));
 
 const Home = () => {
 	const components = [
@@ -16,7 +17,6 @@ const Home = () => {
 
 	//come up with a non shitty version
 	const handleScroll = id => {
-		console.log(id);
 		window.scrollTo({
 			behavior: 'smooth',
 			top: window.innerHeight,
