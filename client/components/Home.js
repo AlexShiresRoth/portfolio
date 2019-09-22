@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Fragment, lazy } from 'react';
 import '../css/main.css';
 
 const Header = lazy(() => import('./Header'));
@@ -24,7 +24,7 @@ const Home = () => {
 	};
 
 	return (
-		<div>
+		<div style={{ width: '100vw' }}>
 			<Header />
 			<About />
 			<Projects />

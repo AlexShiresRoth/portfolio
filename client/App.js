@@ -4,8 +4,7 @@ import { Loader } from './loader/Loader';
 
 import './css/main.css';
 
-const  Home  = lazy(() => import('./components/Home'));
-const ResumeDisplay = lazy(() => import('./components/ResumeDisplay'));
+const Home = lazy(() => import('./components/Home'));
 
 const App = () => {
 	return (
@@ -14,10 +13,9 @@ const App = () => {
 				<div>
 					<Router>
 						<Route exact path="/" component={() => <Home />} />
-						<Route path="/resume/" component={() => <ResumeDisplay />} />
 					</Router>
 				</div>
-			</Suspense> 
+			</Suspense>
 		</Fragment>
 	);
 };
