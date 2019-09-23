@@ -4,21 +4,30 @@ const express = require('express'),
 	cors = require('cors'),
 	router = express.Router();
 
+const { check, validationResult } = require('express-validator');
+
 router.use(cors());
 
-router.post('/', async (req, res) => {
+router.post('/', [check('email').isEmail()], async (req, res) => {
+	const errors = validationResult(req);
+
+	if (!errors.isEmpty()) {
+		console.log(errors.array());
+		res.status(500).json({ msg: errors.array() });
+	}
+
 	const { name, email, message } = req.query;
-	console.log(name, email, message);
+
 	const DOMAIN = process.env.DOMAIN;
+
 	const mg = mailgun({ apiKey: process.env.API_KEY, domain: DOMAIN });
+
 	const data = {
 		from: email,
 		to: 'alex@alexshiresroth.com',
 		subject: 'Client Contact Request',
-		text: `<tr class='email-container'>
-            <td>${name}</td>
-             <td>${message}</td>
-             </tr>`,
+		text: `From: ${name} \n
+             Message: ${message} `,
 	};
 
 	await mg.messages().send(data, (error, body) => {
