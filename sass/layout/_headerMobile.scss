@@ -25,15 +25,15 @@
 		&--overlay {
 			position: absolute;
 			background: $orange-color;
-			height: 35vh;
+			height: 55vh;
 			width: 100%;
 			z-index: -1;
 			background-repeat: no-repeat;
 			top: 0;
 			left: 0;
-			& svg{
-				top:100%;
-				position:absolute;
+			& svg {
+				top: 100%;
+				position: absolute;
 			}
 		}
 		&--title-and-desc {
@@ -43,11 +43,13 @@
 			align-items: center;
 			color: #fff;
 			padding: 0rem;
+			opacity: 0;
+			animation: fadeIn 0.5s linear 0s 1 forwards;
 			& h1 {
 				font-size: 5rem;
 				margin: 0.5rem 0;
 				text-transform: uppercase;
-				font-weight: 300;
+				font-weight: 700;
 			}
 			& hr {
 				width: 7rem;
@@ -111,10 +113,11 @@
 		background: transparent;
 		background-size: cover;
 		background-repeat: no-repeat;
-		min-height: 95vh;
+		height: 70vh;
+		max-height: 70vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		position: relative;
 		filter: grayscale(6%);
@@ -125,6 +128,7 @@
 			max-width: 10rem;
 			max-height: 10rem;
 			align-self: center;
+			animation: fadeIn 1.5s linear 0s 1 forwards;
 			& img {
 				height: 100%;
 				width: 100%;
@@ -133,29 +137,55 @@
 		&--overlay {
 			position: absolute;
 			background: $orange-color;
-			height: 50vh;
+			height: 70vh;
+			max-height: 70vh;
 			width: 100%;
 			z-index: -1;
 			background-repeat: no-repeat;
 			top: 0;
 			left: 0;
-			& svg{
-				top:100%;
-				position:absolute;
+			opacity: 0;
+			animation: fadeIn 0.5s linear 0s 1 forwards;
+			& svg {
+				top: 100%;
+				position: absolute;
 			}
 		}
 		&--title-and-desc {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			gap: 2rem;
+			justify-items: center;
+			align-content: center;
 			color: #fff;
 			padding: 0rem;
-			& h1 {
-				font-size: 2.6rem;
-				margin: 0.5rem 0;
-				text-transform: uppercase;
-				font-weight: 300;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			animation: fadeIn 0.5s linear 0s 1 forwards;
+			&--h1-container {
+				position: relative;
+				background: darken($brand-secondary, 10%);
+				transform: rotate(0deg);
+				box-shadow: 0 5px 5px darken($brand-secondary, 20%);
+				opacity: 0;
+				animation: fadeInAndRotate 0.5s linear 0.5s 1 forwards;
+				& h1 {
+					font-size: 2.6rem;
+					margin: 0.5rem 0;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: #fff;
+					letter-spacing: 1.4px;
+					padding: 1.5rem;
+					background: $brand-secondary;
+					transform: rotate(0deg);
+					clip-path: polygon(0 0, 95% 3%, 96% 85%, 0% 100%);
+					box-shadow: 0 2px 2px darken($brand-secondary, 15%);
+					opacity: 0;
+					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;
+				}
 			}
 			& hr {
 				width: 4rem;
@@ -164,11 +194,12 @@
 				border: 0;
 			}
 			& p {
-				color: #666;
-				font-size: 2rem;
-				margin: 0.5rem 0;
+				color: #fff;
+				font-size: 1.5rem;
+				letter-spacing: 1px;
+				margin: 1rem 0;
 				text-transform: uppercase;
-				font-weight: 300;
+				font-weight: 700;
 				text-align: center;
 			}
 			&--icons {
@@ -182,16 +213,16 @@
 					margin: 0 0.2rem;
 					transition: all 0.2s ease;
 					&:hover {
-						box-shadow: 0px 5px 30% darken(#ff4500, 20%);
+						box-shadow: 0px 5px 30% $dark-orange;
 					}
 					& i {
-						font-size: 1.4rem;
-						@include orange-gradient;
+						font-size: 2.4rem;
+						color: $brand-secondary;
 						transition: all 0.3s ease;
 
 						&:hover {
-							@include dark-orange-gradient;
 							cursor: pointer;
+							color: darken($brand-secondary, 5%);
 						}
 					}
 				}

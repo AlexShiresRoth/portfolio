@@ -11,7 +11,9 @@ const HeaderTag = props => {
 		let index = 0;
 		let maxIndex = tags.length;
 
-		setVisibility(1);
+		setTimeout(() => {
+			setVisibility(1);
+		}, 1500);
 
 		setInterval(() => {
 			if (index >= maxIndex) index = 0;
