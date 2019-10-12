@@ -35,8 +35,11 @@ h3 {
 @media screen and (max-width: 600px) {
 	h2 {
 		font-size: 3rem;
+		letter-spacing: 1px;
 	}
+
 	p {
+		font-family: 'Raleway';
 		color: #222;
 		font-size: 1.5rem;
 		font-weight: 700;
