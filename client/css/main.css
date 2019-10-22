@@ -4,8 +4,7 @@
     background: transparent;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
-    max-height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,8 +25,8 @@
     .section__header--overlay {
       position: absolute;
       background: #000b76;
-      height: 40vh;
-      max-height: 40vh;
+      min-height: 40vh;
+      max-height: 90vh;
       width: 100%;
       z-index: -1;
       background-repeat: no-repeat;
