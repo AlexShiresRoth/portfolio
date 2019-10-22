@@ -3,7 +3,7 @@
 		background: transparent;
 		background-size: cover;
 		background-repeat: no-repeat;
-		min-height: 60vh;
+		min-height: 65vh;
 		max-height: 90vh;
 		display: flex;
 		flex-direction: column;
@@ -27,7 +27,7 @@
 		&--overlay {
 			position: absolute;
 			background: $orange-color;
-			min-height: 40vh;
+			min-height: 65vh;
 			max-height: 90vh;
 			width: 100%;
 			z-index: -1;
@@ -39,6 +39,7 @@
 			& svg {
 				top: 100%;
 				position: absolute;
+				max-height: 15vh;
 			}
 		}
 		&--title-and-desc {
