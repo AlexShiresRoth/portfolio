@@ -26,6 +26,16 @@ const Projects = props => {
 			codeurl: 'https://github.com/AlexShiresRoth/italiano-bros',
 		},
 		{
+			title: 'Consurgo International, Inc',
+			tech: 'ReactJS, GatsbyJS, Sass, NodeJS',
+			desc: `Responsive and dynamic website for an exporting company`,
+			img: [
+				'https://res.cloudinary.com/snackmanproductions/image/upload/v1572395030/portfolio/2019-10-29_kzfuqc.png',
+			],
+			url: 'https://consurgointl.com/',
+			codeurl: 'https://github.com/AlexShiresRoth/consurgointl',
+		},
+		{
 			title: 'Send Noods',
 			tech: 'ReactJS, Express, Javascript, NodeJS',
 			desc: `Dynamic and responsive web app for finding ramen restaurants around user location. 

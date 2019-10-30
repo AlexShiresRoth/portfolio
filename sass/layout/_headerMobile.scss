@@ -27,7 +27,7 @@
 		&--overlay {
 			position: absolute;
 			background: $orange-color;
-			min-height: 65vh;
+			min-height: 55vh;
 			max-height: 90vh;
 			width: 100%;
 			z-index: -1;
@@ -39,7 +39,6 @@
 			& svg {
 				top: 100%;
 				position: absolute;
-				max-height: 15vh;
 			}
 		}
 		&--title-and-desc {
@@ -72,7 +71,7 @@
 					padding: 1.5rem;
 					background: $brand-secondary;
 					transform: rotate(0deg);
-					clip-path: polygon(0 0, 95% 3%, 96% 85%, 0% 100%);
+					clip-path: polygon(0 0, 97% 3%, 96% 100%, 0% 100%);
 					box-shadow: 0 2px 2px darken($brand-secondary, 15%);
 					opacity: 0;
 					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;

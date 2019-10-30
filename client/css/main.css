@@ -26,7 +26,7 @@
     .section__header--overlay {
       position: absolute;
       background: #000b76;
-      min-height: 65vh;
+      min-height: 55vh;
       max-height: 90vh;
       width: 100%;
       z-index: -1;
@@ -68,7 +68,7 @@
           padding: 1.5rem;
           background: #5000ca;
           transform: rotate(0deg);
-          clip-path: polygon(0 0, 95% 3%, 96% 85%, 0% 100%);
+          clip-path: polygon(0 0, 97% 3%, 96% 100%, 0% 100%);
           box-shadow: 0 2px 2px #32007e;
           opacity: 0;
           animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards; }
