@@ -28,13 +28,9 @@
 				flex-direction: row;
 				justify-content: center;
 				margin: 0 0.5rem;
-				& i {
+				& svg {
 					font-size: 4rem;
-					background: #f12711; /* fallback for old browsers */
-					@include orange-gradient;
-					/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
+					color: darken($orange-color,5%);
 				}
 				& h3 {
 					color: $orange-color;
@@ -75,13 +71,9 @@
 				justify-content: center;
 				align-items: center;
 				margin: 0 0.5rem;
-				& i {
-					font-size: 3.5rem;
-					background: #f12711; /* fallback for old browsers */
-					@include orange-gradient;
-					/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
+				& svg {
+					font-size: 3.5rem; 
+					color: darken($orange-color, 5%);
 				}
 				& h3 {
 					color: $orange-color;

@@ -26,12 +26,6 @@ const Header = _ => {
     setIcons(urls);
   }, []);
 
-  const scrollDown = () => {
-    window.scrollTo({
-      behavior: "smooth",
-      top: window.innerHeight
-    });
-  };
   return (
     <section className="section__header">
       <div className="section__header--overlay">

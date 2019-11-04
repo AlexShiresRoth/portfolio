@@ -3,6 +3,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	padding: 3rem 0;
 	&--grid {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -12,7 +13,7 @@
 		align-content: center;
 		padding: 3rem 1.5rem;
 		min-height: 55vh;
-		max-width: 50vw;
+		max-width: 60vw;
 		& h2 {
 			font-size: 5rem;
 			color: $orange-color;
@@ -25,17 +26,29 @@
 		}
 	}
 }
+@media screen and (max-width: 1000px){
+	.section__about{
+		max-width:90%;
+		width:90%;
+	}
+	&--grid{
+		& p {
+			font-size: 1.5rem;
+		}
+	}
+}
 
 @media screen and (max-width: 750px) {
 	.section__about {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 2rem;
-		justify-items: start;
+		justify-items: center;
 		align-content: center;
 		padding: 3rem 1.5rem;
 		min-height: 30vh;
 		width: 100%;
+		max-width:100%;
 		&--grid {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
