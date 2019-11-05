@@ -12,7 +12,7 @@
 		justify-items: start;
 		align-content: center;
 		padding: 3rem 1.5rem;
-		min-height: 55vh;
+		min-height: 65vh;
 		max-width: 60vw;
 		& h2 {
 			font-size: 5rem;
@@ -26,14 +26,15 @@
 		}
 	}
 }
-@media screen and (max-width: 1000px){
-	.section__about{
-		max-width:90%;
-		width:90%;
-	}
-	&--grid{
-		& p {
-			font-size: 1.5rem;
+@media screen and (max-width: 1000px) {
+	.section__about {
+		&--grid {
+			max-width: 70%;
+			width: 70%;
+			min-height: 60vh;
+			& p {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -48,13 +49,13 @@
 		padding: 3rem 1.5rem;
 		min-height: 30vh;
 		width: 100%;
-		max-width:100%;
+		max-width: 100%;
 		&--grid {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
 			grid-template-rows: auto;
-			max-width: 100%;
-			width: 100%;
+			max-width: 80%;
+			width: 80%;
 			min-height: 0;
 			gap: 0.5rem;
 			& h2 {

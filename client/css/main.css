@@ -268,7 +268,7 @@
       grid-template-rows: auto;
       gap: 2rem;
       justify-items: center;
-      max-width: 60vw; }
+      max-width: 80vw; }
       .section__projects--container--item {
         display: flex;
         flex-direction: column;
@@ -285,8 +285,7 @@
           .section__projects--container--item--image-overlay:hover {
             background: rgba(0, 0, 0, 0.35); }
         .section__projects--container--item--image-container {
-          width: 30vw;
-          height: 30vh;
+          width: 100%;
           margin: 0rem 0;
           box-shadow: 0 5px 10px #b3b3b3;
           position: relative;
@@ -315,7 +314,7 @@
             margin: 0.5rem 0;
             color: #fff;
             font-weight: 300;
-            font-size: 2rem; }
+            font-size: 2.5rem; }
         .section__projects--container--item--links {
           display: flex;
           flex-direction: row;
@@ -336,6 +335,30 @@
               background: #000b76;
               cursor: pointer;
               border: 1px solid #000b76; } }
+
+@media screen and (max-width: 850px) {
+  .section__projects {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section__projects--buttons a {
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000b76;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease-in-out; }
+      .section__projects--buttons a:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #000b76; }
+    .section__projects--container {
+      max-width: 90vw; }
+      .section__projects--container--item--image-container {
+        width: 100%;
+        height: 100%; }
+      .section__projects--container--item--info h2 {
+        font-size: 2rem; } }
 
 @media screen and (max-width: 600px) {
   .section__projects {
@@ -362,7 +385,8 @@
     .section__projects--container {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto; }
+      grid-template-rows: auto;
+      max-width: 100vw; }
       .section__projects--container--item {
         display: flex;
         flex-direction: column;
@@ -452,20 +476,20 @@
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 3rem;
       min-height: 30rem;
-      width: 60vw; }
+      width: 70vw; }
       .section__skills--container--skill-row--icon-block {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 0 0.5rem; }
         .section__skills--container--skill-row--icon-block svg {
-          font-size: 4rem;
+          font-size: 6rem;
           color: #00095d; }
         .section__skills--container--skill-row--icon-block h3 {
           color: #000b76;
           font-size: 2.5rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .section__skills {
     display: flex;
     flex-direction: column;
@@ -522,7 +546,7 @@
         width: 15vw; }
       .section__contact--container h2 {
         color: #fff;
-        font-family: "Raleway";
+        font-family: 'Raleway';
         margin: 1rem 0;
         font-size: 4rem; }
       .section__contact--container--form {
@@ -607,6 +631,10 @@
               color: #fff;
               font-weight: 500; } }
 
+@media screen and (max-width: 750px) {
+  .section__contact--container h2 {
+    font-size: 2rem; } }
+
 @media screen and (max-width: 600px) {
   .section__contact {
     display: flex;
@@ -631,7 +659,7 @@
         color: #fff;
         margin: 1rem 0;
         font-size: 2rem;
-        font-family: "Raleway"; }
+        font-family: 'Raleway'; }
       .section__contact--container--form {
         margin: 2rem 0;
         background: #fff;
@@ -728,7 +756,7 @@
     justify-items: start;
     align-content: center;
     padding: 3rem 1.5rem;
-    min-height: 55vh;
+    min-height: 65vh;
     max-width: 60vw; }
     .section__about--grid h2 {
       font-size: 5rem;
@@ -740,11 +768,12 @@
       line-height: 2; }
 
 @media screen and (max-width: 1000px) {
-  .section__about {
-    max-width: 90%;
-    width: 90%; }
-  --grid p {
-    font-size: 1.5rem; } }
+  .section__about--grid {
+    max-width: 70%;
+    width: 70%;
+    min-height: 60vh; }
+    .section__about--grid p {
+      font-size: 1.5rem; } }
 
 @media screen and (max-width: 750px) {
   .section__about {
@@ -761,8 +790,8 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
-      max-width: 100%;
-      width: 100%;
+      max-width: 80%;
+      width: 80%;
       min-height: 0;
       gap: 0.5rem; }
       .section__about--grid h2 {
