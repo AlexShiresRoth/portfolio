@@ -54,8 +54,8 @@
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
 			grid-template-rows: auto;
-			max-width: 80%;
-			width: 80%;
+			max-width: 100%;
+			width: 100%;
 			min-height: 0;
 			gap: 0.5rem;
 			& h2 {

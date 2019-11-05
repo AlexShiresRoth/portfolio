@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import '../../css/main.css';
 
 export const ProjectsMap = props => {
-	const renderProjects = props.projects.map(project => {
+	const renderProjects = props.projects.map((project, i) => {
 		return (
-			<div className="section__projects--container--item">
+			<div className="section__projects--container--item" key={i}>
 				<div className="section__projects--container--item--image-container">
 					<div className="section__projects--container--item--image-overlay"></div>
 					{project.img.map((img, i) => {
