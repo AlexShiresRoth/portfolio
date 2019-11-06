@@ -5,7 +5,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 70vh;
-    max-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,7 +26,6 @@
       position: absolute;
       background: #000b76;
       min-height: 65vh;
-      max-height: 90vh;
       width: 100%;
       z-index: -1;
       background-repeat: no-repeat;
@@ -107,11 +105,9 @@
 
 @media screen and (max-width: 1000px) {
   .section__header {
-    height: 70vh;
-    max-height: 70vh; }
+    min-height: 70vh; }
     .section__header--overlay {
-      height: 70vh;
-      max-height: 70vh; }
+      min-height: 70vh; }
     .section__header h1 {
       font-size: 3rem; }
     .section__header--icons a i {
@@ -124,8 +120,7 @@
     background: transparent;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
-    max-height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,8 +141,7 @@
     .section__header--overlay {
       position: absolute;
       background: #000b76;
-      height: 70vh;
-      max-height: 70vh;
+      min-height: 70vh;
       width: 100%;
       z-index: -1;
       background-repeat: no-repeat;
