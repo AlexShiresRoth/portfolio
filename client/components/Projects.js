@@ -37,13 +37,13 @@ const Projects = props => {
 		},
 		{
 			title: 'Send Noods',
-			tech: 'ReactJS, Express, Javascript, NodeJS',
+			tech: 'ReactJS, Express, Javascript, NodeJS, Redux',
 			desc: `Dynamic and responsive web app for finding ramen restaurants around user location. 
         Integrated with Google Places/Maps API.`,
 			img: [
 				'https://res.cloudinary.com/snackmanproductions/image/upload/v1567980261/portfolio/2019-09-08_7_vtodo7.png',
 			],
-			url: 'https://shrouded-reef-43110.herokuapp.com/',
+			url: 'http://sendnoods.herokuapp.com/',
 			codeurl: 'https://github.com/AlexShiresRoth/send-noods',
 		},
 		{
