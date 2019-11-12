@@ -22,15 +22,15 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 3rem;
 			min-height: 30rem;
-			width: 60vw;
+			width: 70vw;
 			&--skill-row--icon-block {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				margin: 0 0.5rem;
 				& svg {
-					font-size: 4rem;
-					color: darken($orange-color,5%);
+					font-size: 6rem;
+					color: darken($orange-color, 5%);
 				}
 				& h3 {
 					color: $orange-color;
@@ -41,7 +41,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 	.section__skills {
 		display: flex;
 		flex-direction: column;
@@ -72,7 +72,7 @@
 				align-items: center;
 				margin: 0 0.5rem;
 				& svg {
-					font-size: 3.5rem; 
+					font-size: 3.5rem;
 					color: darken($orange-color, 5%);
 				}
 				& h3 {

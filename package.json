@@ -1,54 +1,55 @@
 {
-  "name": "portfoliosite",
-  "version": "1.0.0",
-  "description": "My personal portfolio",
-  "scripts": {
-    "webpack": "webpack --mode=development",
-    "start": "node ./bin/www.js",
-    "compile:sass": "node-sass --include-path sass sass/main.scss   client/css/main.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/AlexShiresRoth/portfolio.git"
-  },
-  "author": "AlexShiresRoth",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexShiresRoth/portfolio/issues"
-  },
-  "homepage": "https://github.com/AlexShiresRoth/portfolio#readme",
-  "dependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/polyfill": "^7.6.0",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@babel/runtime": "^7.6.3",
-    "@iconify/icons-fa-brands": "^1.0.8",
-    "@iconify/icons-logos": "^1.0.9",
-    "@iconify/icons-mdi": "^1.0.30",
-    "@iconify/react": "^1.1.1",
-    "axios": "^0.19.0",
-    "babel-loader": "^8.0.6",
-    "cors": "^2.8.5",
-    "css-loader": "^2.1.1",
-    "ejs": "^2.7.1",
-    "express": "^4.17.1",
-    "express-validator": "^6.2.0",
-    "file-loader": "^4.2.0",
-    "mailgun-js": "^0.22.0",
-    "node-sass": "^4.13.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router-dom": "^5.1.2",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.41.2"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "webpack-cli": "^3.3.9"
-  }
+	"name": "portfoliosite",
+	"version": "1.0.0",
+	"description": "My personal portfolio",
+	"scripts": {
+		"webpack": "webpack --mode=production",
+		"start": "node ./bin/www.js",
+		"compile:sass": "node-sass --include-path sass sass/main.scss   client/css/main.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/AlexShiresRoth/portfolio.git"
+	},
+	"author": "AlexShiresRoth",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AlexShiresRoth/portfolio/issues"
+	},
+	"homepage": "https://github.com/AlexShiresRoth/portfolio#readme",
+	"dependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/node": "^7.6.3",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/plugin-transform-runtime": "^7.6.2",
+		"@babel/polyfill": "^7.6.0",
+		"@babel/preset-env": "^7.6.3",
+		"@babel/preset-react": "^7.6.3",
+		"@babel/runtime": "^7.6.3",
+		"@iconify/icons-fa-brands": "^1.0.8",
+		"@iconify/icons-logos": "^1.0.9",
+		"@iconify/icons-mdi": "^1.0.30",
+		"@iconify/icons-simple-icons": "^1.0.16",
+		"@iconify/react": "^1.1.1",
+		"axios": "^0.19.0",
+		"babel-loader": "^8.0.6",
+		"cors": "^2.8.5",
+		"css-loader": "^2.1.1",
+		"ejs": "^2.7.1",
+		"express": "^4.17.1",
+		"express-validator": "^6.2.0",
+		"file-loader": "^4.2.0",
+		"mailgun-js": "^0.22.0",
+		"node-sass": "^4.13.0",
+		"react": "^16.11.0",
+		"react-dom": "^16.11.0",
+		"react-router-dom": "^5.1.2",
+		"style-loader": "^0.23.1",
+		"webpack": "^4.41.2"
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0",
+		"webpack-cli": "^3.3.9"
+	}
 }
