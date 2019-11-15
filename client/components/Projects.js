@@ -44,7 +44,7 @@ const Projects = props => {
       img: [
         "https://res.cloudinary.com/snackmanproductions/image/upload/v1567980261/portfolio/2019-09-08_7_vtodo7.png"
       ],
-      url: "https://shrouded-reef-43110.herokuapp.com/",
+      url: "https://sendnoods.herokuapp.com/",
       codeurl: "https://github.com/AlexShiresRoth/send-noods"
     },
     {
