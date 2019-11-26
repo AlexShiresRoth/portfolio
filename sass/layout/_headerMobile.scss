@@ -60,7 +60,7 @@
 				opacity: 0;
 				animation: fadeInAndRotate 0.5s linear 0.5s 1 forwards;
 				& h1 {
-					font-size: 4rem;
+					font-size: 6rem;
 					margin: 0.5rem 0;
 					text-transform: uppercase;
 					font-weight: 700;
@@ -69,7 +69,6 @@
 					padding: 1.5rem;
 					background: $brand-secondary;
 					transform: rotate(0deg);
-					clip-path: polygon(0 0, 97% 3%, 96% 100%, 0% 100%);
 					box-shadow: 0 2px 2px darken($brand-secondary, 15%);
 					opacity: 0;
 					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;

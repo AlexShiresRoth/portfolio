@@ -63,11 +63,6 @@ const Skills = () => {
 			icon: <Icon icon={mongodbIcon} />,
 			projects: null,
 		},
-		{
-			title: 'ExpressJS',
-			icon: <Icon icon={expressIcon} />,
-			projects: '6',
-		},
 	];
 
 	const [skills, setSkills] = useState(skillsArr);
