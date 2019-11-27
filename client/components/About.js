@@ -7,7 +7,8 @@ const About = () => {
 				<h2>Hey,</h2>
 				<p>
 					I'm Alex Roth, a self-taught full stack dev from Long Island, NY. Currently, I am working in the
-					MERN stack and learning some game development on the side. Check out my projects below...
+					MERN(MONGO,EXPRESS,REACT,NODE) stack and learning some game development on the side. Check out my
+					projects below.
 				</p>
 			</div>
 		</section>

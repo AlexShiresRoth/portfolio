@@ -65,7 +65,7 @@ const Skills = () => {
 		},
 	];
 
-	const [skills, setSkills] = useState(skillsArr);
+	const [skills, setSkills] = useState([]);
 
 	useEffect(() => {
 		setSkills(skillsArr);

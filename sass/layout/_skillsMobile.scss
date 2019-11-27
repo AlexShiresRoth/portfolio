@@ -4,7 +4,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		min-height: 95vh;
+		margin: 6rem 0;
 		&--heading {
 			width: 100%;
 			display: flex;
@@ -17,17 +17,24 @@
 			}
 		}
 		&--container {
-			margin: 4rem 0;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 3rem;
+			gap: 3rem;
 			min-height: 30rem;
 			width: 70vw;
+			background: #f3f3f3;
+			box-shadow: 0 5px 5px darken(#eee, 2%);
+			border-radius: 5px;
+			padding: 1rem;
 			&--skill-row--icon-block {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
+				align-items: center;
+				box-shadow: 0 3px 3px darken(#eee, 2%);
+				padding: 0.5rem;
 				margin: 0 0.5rem;
+				border-radius: 5px;
 				& svg {
 					font-size: 6rem;
 					color: darken($orange-color, 5%);
@@ -63,13 +70,19 @@
 			padding: 2rem 0;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			background: #f3f3f3;
+			box-shadow: 0 5px 5px darken(#eee, 2%);
+			border-radius: 5px;
 			gap: 1rem;
 			min-height: 30rem;
+			width: 90vw;
 			&--skill-row--icon-block {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
+				box-shadow: 0 3px 3px darken(#eee, 2%);
+				border-radius: 5px;
 				margin: 0 0.5rem;
 				& svg {
 					font-size: 3.5rem;
